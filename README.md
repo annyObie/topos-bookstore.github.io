@@ -46,14 +46,6 @@ For example, for a website whose authors and events are primarily or only locate
 timezone: "America/New_York"
 ```
 
-### `main_logo`
-
-The filename of your website's main logo. To be useful, there must be a file of the same name in your website's [`static/images`](static/images/) folder. For example:
-
-``` yaml
-main_logo: my-site-logo.jpg
-```
-
 ## Build settings
 
 These settings affect the way Jekyll processes your site's source files. You probably shouldn't change any of these. :)

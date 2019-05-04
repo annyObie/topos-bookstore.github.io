@@ -2,15 +2,26 @@
  * @group Variables.
  */
 :root {
-    --main-color: black;
-    --accent-color: red;
+    --main-color: white;
+    --accent-color: #555;
 }
 
 /**
  * @group Typography.
- *
- * Put @font-face declarations here.
  */
+
+h1 {
+    color: black;
+}
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color .25s;
+}
+a:hover {
+    color: white;
+    text-decoration: underline wavy currentColor;
+}
 
 /**
  * @group Reset.
@@ -27,8 +38,61 @@ figure {
 }
 
 body {
-    background: #fff;
+    padding: 1em 6em;
+    background: #fff url("../images/catwall4.jpg");
+    font-size: 24px;
     color: var(--main-color);
+}
+
+#Masthead {
+    display: flex;
+}
+#Masthead h1 img {
+    max-width: 300px;
+}
+#MainNavigation ul {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+#MainNavigation li {
+    margin: 0 2em 0 1em;
+}
+
+#MainContent ul:first-of-type li {
+    list-style-type: disc;
+}
+
+.social-links li {
+    margin-top: 1em;
+    display: inline-block;
+}
+.social-links li:first-child::after {
+    content: " // ";
+}
+
+.icon {
+    max-width: 1em;
+}
+.h-event {
+    margin-bottom: 3em;
+}
+.h-event img {
+    max-width: 100%;
+}
+.h-event .u-photo,
+.h-event .event-status {
+    display: none;
+}
+
+#MainFooter {
+    text-align: center;
+}
+#MainFooter .u-photo {
+    display: none;
+}
+#MainFooter .p-tel {
+    display: block;
 }
 
 /**
@@ -37,4 +101,11 @@ body {
  * Put small-screen styles here.
  */
 @media screen and (max-width: 500px) {
+    body {
+        padding: 20px 10px;
+        font-size: 18px;
+    }
+    #Masthead {
+        display: block;
+    }
 }

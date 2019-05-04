@@ -1,6 +1,6 @@
 <footer id="MainFooter">
     <p class="h-card vcard">
-        <img src="{{ "/static/images/"| append: site.main_logo | absolute_url }}" alt="" class="u-photo photo" />
+        <img src="{{ site.logo | absolute_url }}" alt="" class="u-photo photo" />
         <a href="{{ site.url }}" class="p-name fn p-org org u-url url">{{ site.title }}</a><br />
         <span class="adr" itemprop="address" itemscope="itemscope" itemtype="https://schema.org/PostalAddress">
             <span class="p-street-address street-address" itemprop="streetAddress">{{ site.data.contact_info.street_address }}</span>,
@@ -12,4 +12,5 @@
         {% if site.data.contact_info.email %}<a href="mailto:{{ site.data.contact_info.email }}" class="u-email email"><span itemprop="email">{{ site.data.contact_info.email }}</span></a>{% endif %}
     </p>
     <p>(<a href="https://h2vx.com/vcf/get-contact.php?uri={{ "/" | absolute_url | cgi_escape }}">Add our contact information to your address book</a>.)</p>
+    <p>Website by <a href="https://shiftctrl.space/">Shift-CTRL Space</a>.</p>
 </footer>

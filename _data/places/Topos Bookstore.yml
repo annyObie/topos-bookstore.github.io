@@ -1,0 +1,13 @@
+name: Topos Bookstore
+type: BookStore
+address:
+    streetAddress: 788 Woodward Avenue
+    addressLocality: Ridgewood
+    addressRegion: NY
+    postalCode: 11385
+    addressCountry: United States
+url: https://topos-bookstore.github.io/
+logo: https://topos-bookstore.github.io/static/images/toposFB_1500.gif
+sameAs:
+    - https://www.facebook.com/toposbookstore
+    - https://www.instagram.com/toposbookstore
